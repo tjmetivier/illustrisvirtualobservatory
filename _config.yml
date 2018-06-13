@@ -1,6 +1,6 @@
 # Permalinks
 permalink:           /:title
-relative_permalinks: true
+relative_permalinks: false
 
 # Setup
 timezone:            your timezone # eg. Asia/Kathmandu
