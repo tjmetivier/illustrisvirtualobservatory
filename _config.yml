@@ -1,18 +1,13 @@
-
-# Syntax highlighting
-markdown:            redcarpet
-highlighter:         pygments
-
 # Permalinks
 permalink:           /:title
-
+relative_permalinks: true
 
 # Setup
 timezone:            your timezone # eg. Asia/Kathmandu
 locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
+name:				         virtualobserv
+title:               Illustris Virtual Observatory
+tagline:             'Generate mock SDSS or HST observations of galaxies across cosmic time. Galaxies are from the Illustris simulation and this program is heavily based on the Sunpy module by Dr. Torrey (ptorrey@mit.edu) and Dr. Snyder (gsnyder@stsci.edu).'
 description:         'description'
 url:                 site url
 rss:                 rss feed url
