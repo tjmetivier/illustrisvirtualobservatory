@@ -4,6 +4,6 @@ description: Generate mock SDSS or HST observations of galaxies across cosmic ti
 author: Tyler James Metivier
 author_email: tylerphys@uconn.edu
 category_dir: /
-markdown: rdiscount
+
 permalink: pretty
 paginate: 1
