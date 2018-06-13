@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+name: Illustris Virtual Observatory
+description: Generate mock SDSS or HST observations of galaxies across cosmic time. Galaxies are from the Illustris simulation and this program is heavily based on the Sunpy module by Dr. Torrey (ptorrey@mit.edu) and Dr. Snyder (gsnyder@stsci.edu).
