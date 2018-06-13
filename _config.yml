@@ -1,7 +1,7 @@
 # Permalinks
 permalink:           /:title
 relative_permalinks: false
-theme: so-simple-theme
+theme: jekyll-theme-cayman
 
 # Setup
 timezone:            your timezone # eg. Asia/Kathmandu
