@@ -1,9 +1,0 @@
-
-input(r"""
-
-
-         Hello, please press the 'enter' or 'return' key to install dependencies and catalogs...
-
-
-""")
-
