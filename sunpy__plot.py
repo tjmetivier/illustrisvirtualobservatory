@@ -27,11 +27,11 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import gc
 
-__author__ = "Paul Torrey and Greg Snyder"
-__copyright__ = "Copyright 2014, The Authors"
+__author__ = "Paul Torrey, Greg Snyder, and Tyler Metivier"
+__copyright__ = "Copyright 2018, The Authors"
 __credits__ = ["Paul Torrey", "Greg Snyder"]
 __license__ = "GPL"
-__version__ = "1.0"
+__version__ = "1.1"
 __maintainer__ = "Paul Torrey"
 __email__ = "ptorrey@mit.harvard.edu"
 __status__ = "Production"
