@@ -4,6 +4,6 @@ layout: default
 
 # Installation
 
->Dependencies required: numpy, astropy,
+>Dependencies required: numpy, matplotlib, astropy, cosmocalc, scipy, gc, wget
 >
 >
