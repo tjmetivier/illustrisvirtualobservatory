@@ -1,0 +1,23 @@
+
+
+pip install numpy
+
+pip install matplotlib
+
+pip install gc
+
+pip install astropy
+
+pip install cosmocalc
+
+pip install scipy
+
+pip install wget
+
+echo --------------------------------------------------------------------
+
+echo  Illustris Virtual Observatory is ready to run  
+
+echo --------------------------------------------------------------------
+
+open http://illustris-project.org/galaxy_obs/
