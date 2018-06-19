@@ -16,12 +16,12 @@ The **ID** for a given galaxy can be found to the left of its image. This **ID**
 
 ## Choose A Sample
 
-[Hey](p1.png)
+![Hey](p1.png)
 
 
 
 ## Now do it again
 
 
-[Hey](p2.png)
+![Hey](p2.png)
 
