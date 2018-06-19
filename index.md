@@ -14,7 +14,7 @@ This will download any dependency that the program requires as well as open up a
 
 ## Choose A Sample
 
-![Hey](p1.png)
+![Search](p1.png)
 
 Use the search tool and narrow your catalog by varying mass limit contributions. 
 
@@ -25,7 +25,7 @@ Use the search tool and narrow your catalog by varying mass limit contributions.
 
 The **ID** for a given galaxy can be found to the left of its image. This **ID** will later be used to specify which galaxy you'd like for simulated observations. 
 
-![Hey](p2.png)
+![ID](p2.png)
 
 Once the **ID** number to the corresponding galaxy is found, make sure to save it somewhere for later! 
 
@@ -36,7 +36,7 @@ Once the **ID** number to the corresponding galaxy is found, make sure to save i
 
 Run the program titled **Illustris Virtual Observatory**- this should open up the following terminal window:
 
-!(p3.png)
+![Program](p3.png)
 
 Follow the program and enter your chosen galaxy **ID** when prompted. If everything is working correctly, you should be given a choice:
 1. **Hubble Space Telescope** (_option 1_)
@@ -44,7 +44,7 @@ Follow the program and enter your chosen galaxy **ID** when prompted. If everyth
 
 Based on your choice, the images produced will be convolved to the respective pixel-scaling/resolution. 
 
-!(p4.png)
+![Also Program](p4.png)
 
 After selecting an instrument, the program should inform you when it has finished (_and if it was successful_). 
 
