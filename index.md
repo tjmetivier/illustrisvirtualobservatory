@@ -14,7 +14,14 @@ This will download any dependency that the program requires as well as open up a
 
 The **ID** for a given galaxy can be found to the left of its image. This **ID** will later be used to specify which galaxy you'd like for simulated observations. 
 
+## Choose A Sample
+
+[Hey](p1.png)
 
 
 
+## Now do it again
+
+
+[Hey](p2.png)
 
