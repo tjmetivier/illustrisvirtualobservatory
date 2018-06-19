@@ -4,7 +4,7 @@ layout: default
 
 # Installation
 
->Dependencies required: numpy, matplotlib, astropy, cosmocalc, scipy, gc, wget
+>Dependencies required: numpy, matplotlib, astropy, cosmocalc, scipy, gc, and wget.
 
 ## Download the repository
 
@@ -29,8 +29,40 @@ The **ID** for a given galaxy can be found to the left of its image. This **ID**
 
 Once the **ID** number to the corresponding galaxy is found, make sure to save it somewhere for later! 
 
+* * * 
 
-## 
+# Running the program
+> Make sure you've run the **setup** file and have all required dependencies installed...
+
+Run the program titled **Illustris Virtual Observatory**- this should open up the following terminal window:
+
+!(p3.png)
+
+Follow the program and enter your chosen galaxy **ID** when prompted. If everything is working correctly, you should be given a choice:
+1. **Hubble Space Telescope** (_option 1_)
+2. **Sloan Digital Sky Survey** (_option 2_)
+
+Based on your choice, the images produced will be convolved to the respective pixel-scaling/resolution. 
+
+!(p4.png)
+
+After selecting an instrument, the program should inform you when it has finished (_and if it was successful_). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
