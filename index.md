@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+![Logo](new.png)
 # Installation
 
 >Dependencies required: numpy, matplotlib, astropy, cosmocalc, scipy, gc, and wget.
