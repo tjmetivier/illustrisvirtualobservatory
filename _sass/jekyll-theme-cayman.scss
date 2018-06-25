@@ -93,7 +93,7 @@ a {
   line-height: 2px;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: repeating-radial-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: linear-gradient(170deg, $header-bg-color-secondary, $header-bg-color);
 
   @include large {
     padding: 5rem 6rem;
