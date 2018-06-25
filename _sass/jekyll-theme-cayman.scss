@@ -89,11 +89,11 @@ a {
 
 .page-header {
   color: $header-heading-color;
-  height: 2px;
-  line-height: 1px;
+  height: 0.25px;
+  line-height: 0.25px;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(110deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: linear-gradient(200deg, $header-bg-color-secondary, $header-bg-color);
 
   @include large {
     padding: 5rem 6rem;
