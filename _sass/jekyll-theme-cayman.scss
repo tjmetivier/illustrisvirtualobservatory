@@ -89,7 +89,10 @@ a {
 
 .page-header {
   color: $header-heading-color;
-  background-image: url('https://github.com/tjmetivier/illustrisvirtualobservatory/blob/master/new.png');
+  width: 0.01rem
+  text-align: center;
+  background-color: $header-bg-color;
+  background-image: linear-gradient(200deg, $header-bg-color-secondary, $header-bg-color);
 
   @include large {
     padding: 5rem 6rem;
