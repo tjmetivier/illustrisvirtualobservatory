@@ -2,6 +2,13 @@
 layout: default
 ---
 ![Logo](new.png)
+***
+>A command line program for creating synthetic observations of galaxies from [Illustris](http://www.illustris-project.org/).
+>Create mock observations from Hubble Space Telescope or Sloan Digital Sky Survey.
+>Customize parameters like redshift, camera, filter etc...
+>_This program was created by updating, compiling, and modifying the [Sunpy Module](http://www.github.com/ptorrey/sunpy/) by Dr. Torrey & Dr. Snyder.
+***
+
 # Installation
 
 >Dependencies required: numpy, matplotlib, astropy, cosmocalc, scipy, gc, and wget.
