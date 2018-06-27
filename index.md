@@ -11,8 +11,6 @@ layout: default
 
 
 >_This program was created by updating, compiling, and modifying the [Sunpy Module](http://www.github.com/ptorrey/sunpy/) by Dr. Torrey & Dr. Snyder._
->
->                                 _by Tyler James Metivier, University of Connecticut_
 * * *
 
 # Installation
@@ -62,6 +60,15 @@ Based on your choice, the images produced will be convolved to the respective pi
 After selecting an instrument, the program should inform you when it has finished (_and if it was successful_). 
 
 
+
+
+>
+>                                 by Tyler James Metivier, University of Connecticut
+>
+
+![whitlogo](whitlogo.png)
+![uconn](uconn.png)
+![CTNASA](ctnasa.png)
 
 
 
