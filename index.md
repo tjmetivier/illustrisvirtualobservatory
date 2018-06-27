@@ -9,8 +9,9 @@ layout: default
 
 *   Customize parameters like redshift, camera, filter etc...
 
->_This program was created by updating, compiling, and modifying the [Sunpy Module](http://www.github.com/ptorrey/sunpy/) by Dr. Torrey & Dr. Snyder._
 
+>_This program was created by updating, compiling, and modifying the [Sunpy Module](http://www.github.com/ptorrey/sunpy/) by Dr. Torrey & Dr. Snyder._
+>_by Tyler James Metivier, University of Connecticut_
 * * *
 
 # Installation
