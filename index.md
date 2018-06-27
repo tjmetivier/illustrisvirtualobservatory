@@ -50,8 +50,10 @@ Run the program titled **Illustris Virtual Observatory**- this should open up th
 ![Program](p3.png)
 
 Follow the program and enter your chosen galaxy **ID** when prompted. If everything is working correctly, you should be given a choice:
-1. **Hubble Space Telescope** (_option 1_)
-2. **Sloan Digital Sky Survey** (_option 2_)
+
+1.                                      **Hubble Space Telescope** (_option 1_)
+
+2.                                     **Sloan Digital Sky Survey** (_option 2_)
 
 Based on your choice, the images produced will be convolved to the respective pixel-scaling/resolution. 
 
@@ -59,8 +61,12 @@ Based on your choice, the images produced will be convolved to the respective pi
 
 After selecting an instrument, the program should inform you when it has finished (_and if it was successful_). 
 
+>Note: backgrounds are currently only available for SDSS. Basics on modifying the code are included in the next section.
+
+The images you produced should now exist in the same directory that the program is in. **Illustris Virtual Observatory** should output .png and .fits files containing your observations. 
 
 
+# Changing the program
 
 >
 >                                 by Tyler James Metivier, University of Connecticut
