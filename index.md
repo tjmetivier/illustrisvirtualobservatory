@@ -79,4 +79,4 @@ Here, you can completely customize the output. Changing the redshift on this pag
 
 ![whitlogo](whitlogo.png)
 ![uconn](uconn.png)
-![CTNASA](ctnasa.png)
+![CTNASA](nasa.png)
