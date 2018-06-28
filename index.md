@@ -21,26 +21,26 @@ layout: default
 
 After downloading the files and saving them to your working directory, we can first run the program called **setup**.  
 
-This will download any dependency that the program requires as well as open up a webpage to the [Illustris Galaxy Observatory-](http://www.illustris-project.org/galaxy_obs/) where mock galaxies from the Illustris simulation can be viewed. 
+This will download any dependency that the program requires as well as open up a webpage to the [Illustris Galaxy Observatory-](http://www.illustris-project.org/galaxy_obs/) where mock galaxies from the Illustris simulation can be viewed.
 
 ## Choose A Sample
 
 ![Search](p1.png)
 
-Use the search tool and narrow your catalog by varying mass limit contributions. 
+Use the search tool and narrow your catalog by varying mass limit contributions.
 
 >Search tools include: stellar mass limits, black hole mass limits, gas mass limits, and total mass limits.
 
 
 ### Identify the galaxy ID
 
-The **ID** for a given galaxy can be found to the left of its image. This **ID** will later be used to specify which galaxy you'd like for simulated observations. 
+The **ID** for a given galaxy can be found to the left of its image. This **ID** will later be used to specify which galaxy you'd like for simulated observations.
 
 ![ID](p2.png)
 
-Once the **ID** number to the corresponding galaxy is found, make sure to save it somewhere for later! 
+Once the **ID** number to the corresponding galaxy is found, make sure to save it somewhere for later!
 
-* * * 
+* * *
 
 # Running the program
 > Make sure you've run the **setup** file and have all required dependencies installed...
@@ -55,40 +55,27 @@ Follow the program and enter your chosen galaxy **ID** when prompted. If everyth
 
 2.                                     **Sloan Digital Sky Survey** (_option 2_)
 
-Based on your choice, the images produced will be convolved to the respective pixel-scaling/resolution. 
+Based on your choice, the images produced will be convolved to the respective pixel-scaling/resolution.
 
 ![Also Program](p4.png)
 
-After selecting an instrument, the program should inform you when it has finished (_and if it was successful_). 
+After selecting an instrument, the program should inform you when it has finished (_and if it was successful_).
 
 >Note: backgrounds are currently only available for SDSS. Basics on modifying the code are included in the next section.
 
-The images you produced should now exist in the same directory that the program is in. **Illustris Virtual Observatory** should output .png and .fits files containing your observations. 
+The images you produced should now exist in the same directory that the program is in. **Illustris Virtual Observatory** should output .png and .fits files containing your observations.
 
 
 # Changing the program
 
->
->                                 by Tyler James Metivier, University of Connecticut
->
+The program file "**Illustris Virtual Observatory**" is a Unix executable- but it is written in Python 3. This means you can simply open the file in a text editor and modify the script to your liking.
+
+![Full Functions](p5.png)
+
+Here, you can completely customize the output. Changing the redshift on this page will change
+>                                 by _Tyler James Metivier_, University of Connecticut
+>                                                       2018
 
 ![whitlogo](whitlogo.png)
 ![uconn](uconn.png)
 ![CTNASA](ctnasa.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
