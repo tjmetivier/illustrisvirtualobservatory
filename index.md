@@ -74,9 +74,9 @@ The program file "**Illustris Virtual Observatory**" is a Unix executable- but i
 ![Full Functions](p5.png)
 
 Here, you can completely customize the output. Changing the redshift on this page will change
->                                 by _Tyler James Metivier_, University of Connecticut
+>                                 by Tyler James Metivier, University of Connecticut
 >                                                       2018
-
+>
 ![whitlogo](whitlogo.png)
 ![uconn](uconn.png)
 ![CTNASA](nasa.png)
