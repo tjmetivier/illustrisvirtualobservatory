@@ -1,16 +1,17 @@
-#!/usr/bin/env python
 
 """
 
 
-                      Illustris Virtual Observatory, Tyler Metivier, tylerphys@uconn.edu
-                                    Adapted from sunpy module by Dr. Torrey 2015
+                                        Illustris Virtual Observatory,
+                                     Tyler Metivier, tylerphys@uconn.edu
+                                          University of Connecticut
+
+                                        NASA CT Space Grant Consortium                              (Tyler's funding)
+                                  Adapted from Sunpy module by Dr. Torrey 2015
 
 
 
 """
-
-
 
 
 import numpy as np
@@ -19,10 +20,6 @@ import sys
 sys.path.append('../..')
 import sunpy__load as sunpy__load
 import sunpy__plot as sunpy__plot
-
-
-
-
 
 
 print(r"""
@@ -80,9 +77,8 @@ ________________________________________________________________________________
 
                                      It`s nice to meet you,''', pal)
 
-my_api = "a4385a1f5eac5c06e2e2c1f45eebb4d3"                     #This is my (T.M.) API
+my_api = "a4385a1f5eac5c06e2e2c1f45eebb4d3"  # This is my (T.M.) API
 dl_base = 'http://www.illustris-project.org'
-
 
 
 try:
@@ -127,7 +123,7 @@ common_args = {
     'lupton_alpha':         2e-12,          # was 1e-4
     'lupton_Q':             10,             # was ~100
     'pixelsize_arcsec':     0.06,           # SDSS - 0.24
-    'psf_fwhm_arcsec':      0.13,            # SDSS - 1.0
+    'psf_fwhm_arcsec':      0.13,            # SDSS - 1.3
     'sn_limit':             25.0,
     'sky_sig':              None,           #
     'redshift':             0.01,           #
@@ -169,7 +165,7 @@ ________________________________________________________________________________
                                                      :''')
 if tele == '2':
     common_args['pixelsize_arcsec'] = 0.24
-    common_args['psf_fwhm_arcsec'] = 1.0
+    common_args['psf_fwhm_arcsec'] = 1.3
     sunpy__plot.plot_synthetic_sdss_gri(
         filename, savefile='./synthetic_sdss_gri_' + str(galnr) + '.png', **common_args)
     print('Your Sloan Digital Sky Survey Observations are complete,', pal)
