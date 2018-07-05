@@ -21,6 +21,7 @@ sys.path.append('../..')
 import sunpy__load as sunpy__load
 import sunpy__plot as sunpy__plot
 
+os.system('clear')
 
 print(r"""
 
@@ -60,6 +61,7 @@ start = input(r"""
 
 """)
 
+clr = os.system('clear')
 
 pal = input(r'''
 ____________________________________________________________________________________________________________________
