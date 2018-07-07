@@ -1,5 +1,6 @@
 *.py~
 *.txt~
+*.md~
 setup~
 s.sh~
 rough.txt~
@@ -11,4 +12,5 @@ end.py~
 backupmaster.py~
 __pycache__/sunpy__plot.cpython-36.pyc
 .DS_Store
+.gitignore~
 #.gitignore#
