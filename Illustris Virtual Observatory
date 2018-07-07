@@ -61,23 +61,23 @@ start = input(r"""
 
 """)
 
-clr = os.system('clear')
+os.system('clear')
 
 pal = input(r'''
-____________________________________________________________________________________________________________________
 
 
                                                 Hello!
                                            What is your name?
 
-____________________________________________________________________________________________________________________
 
                                              : ''')
 
-print('''
-____________________________________________________________________________________________________________________
+os.system('clear')
 
-                                     It`s nice to meet you,''', pal)
+print('''
+                                     It`s nice to meet you,
+
+                                           ''', pal)
 
 my_api = "a4385a1f5eac5c06e2e2c1f45eebb4d3"  # This is my (T.M.) API
 dl_base = 'http://www.illustris-project.org'
@@ -138,12 +138,14 @@ common_args = {
 }
 
 for index, galnr in enumerate(all_galnrs[:1]):
+    os.system('clear')
     galnr = input('''
-____________________________________________________________________________________________________________________
 
+                                    Please enter the galaxy ID number:
+                                    ''')
+    print("""
+                                    You chose galaxy""", galnr)
 
-                                    Please enter the galaxy ID number: ''')
-    print("You chose galaxy", galnr)
     cmd = 'wget --content-disposition --header="API-Key: ' + my_api + '" "' + dl_base + \
         '/api/Illustris-1/snapshots/135/subhalos/' + str(galnr) +  \
         '/stellar_mocks/broadband.fits"'
@@ -152,9 +154,9 @@ ________________________________________________________________________________
         os.system(cmd)
     filename = "./broadband_" + str(galnr) + ".fits"
 
-tele = input('''
-____________________________________________________________________________________________________________________
+os.system('clear')
 
+tele = input('''
 
                               ┌─┐┌─┐┬  ┌─┐┌─┐┌┬┐  ┌─┐┌┐┌  ┬┌┐┌┌─┐┌┬┐┬─┐┬ ┬┌┬┐┌─┐┌┐┌┌┬┐
             ──────────────────└─┐├┤ │  ├┤ │   │   ├─┤│││  ││││└─┐ │ ├┬┘│ ││││├┤ │││ │──────────────────
@@ -185,7 +187,6 @@ redshift = input("""
                                ┌─┐┬ ┬┌─┐┌─┐┌─┐┌─┐  ┌─┐  ┬─┐┌─┐┌┬┐┌─┐┬ ┬┬┌─┐┌┬┐
                 ───────────────│  ├─┤│ ││ │└─┐├┤   ├─┤  ├┬┘├┤  ││└─┐├─┤│├┤  │───────────────
                                └─┘┴ ┴└─┘└─┘└─┘└─┘  ┴ ┴  ┴└─└─┘─┴┘└─┘┴ ┴┴└   ┴
-
 
 
 

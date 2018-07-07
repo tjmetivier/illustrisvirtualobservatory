@@ -1,29 +1,30 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 
 """
-
-
                       Illustris Virtual Observatory, Tyler Metivier, tylerphys@uconn.edu
+                                                      
+                                                        2018
+
                                     Adapted from sunpy module by Dr. Torrey 2015
 
-
-
 """
-
-
 
 
 import numpy as np
+
 import os
+
 import sys
+
 sys.path.append('../..')
+
 import sunpy__load as sunpy__load
+
 import sunpy__plot as sunpy__plot
 
+#_________________________________________________________
 
-
-
-
+os.system('clear')
 
 print(r"""
 
@@ -65,7 +66,11 @@ start = input(r"""
 
 
 pal = input(r'''
-____________________________________________________________________________________________________________________
+
+
+
+
+_________________________________________________________
 
 
                                                 Hello!
@@ -80,9 +85,8 @@ ________________________________________________________________________________
 
                                      It`s nice to meet you,''', pal)
 
-my_api = "a4385a1f5eac5c06e2e2c1f45eebb4d3"                     #This is my (T.M.) API 
+my_api = "a4385a1f5eac5c06e2e2c1f45eebb4d3"  # This is my (T.M.) API
 dl_base = 'http://www.illustris-project.org'
-
 
 
 try:
@@ -130,7 +134,7 @@ common_args = {
     'psf_fwhm_arcsec':      0.13,            # SDSS - 1.0
     'sn_limit':             25.0,
     'sky_sig':              None,           #
-    'redshift':             0.01,           #
+    'redshift':             2.5,           #
     'b_fac':                1.1,
     'g_fac':                1.0,
     'r_fac':                0.9,
