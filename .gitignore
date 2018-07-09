@@ -1,6 +1,7 @@
 *.py~
 *.txt~
 *.md~
+clean.sh
 setup~
 s.sh~
 rough.txt~
