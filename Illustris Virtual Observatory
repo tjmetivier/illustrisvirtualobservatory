@@ -64,9 +64,12 @@ start = input(r"""
 os.system('clear')
 
 pal = input(r'''
+____________________________________________________________________________________________________________
 
 
                                                 Hello!
+
+
                                            What is your name?
 
 
@@ -75,6 +78,9 @@ pal = input(r'''
 os.system('clear')
 
 print('''
+____________________________________________________________________________________________________________
+
+
                                      It`s nice to meet you,
 
                                            ''', pal)
@@ -140,10 +146,12 @@ common_args = {
 for index, galnr in enumerate(all_galnrs[:1]):
     os.system('clear')
     galnr = input('''
+____________________________________________________________________________________________________________
 
                                     Please enter the galaxy ID number:
                                     ''')
     print("""
+____________________________________________________________________________________________________________
                                     You chose galaxy""", galnr)
 
     cmd = 'wget --content-disposition --header="API-Key: ' + my_api + '" "' + dl_base + \
@@ -157,7 +165,7 @@ for index, galnr in enumerate(all_galnrs[:1]):
 os.system('clear')
 
 tele = input('''
-
+____________________________________________________________________________________________________________
                               ┌─┐┌─┐┬  ┌─┐┌─┐┌┬┐  ┌─┐┌┐┌  ┬┌┐┌┌─┐┌┬┐┬─┐┬ ┬┌┬┐┌─┐┌┐┌┌┬┐
             ──────────────────└─┐├┤ │  ├┤ │   │   ├─┤│││  ││││└─┐ │ ├┬┘│ ││││├┤ │││ │──────────────────
                               └─┘└─┘┴─┘└─┘└─┘ ┴   ┴ ┴┘└┘  ┴┘└┘└─┘ ┴ ┴└─└─┘┴ ┴└─┘┘└┘ ┴
@@ -167,48 +175,66 @@ tele = input('''
 
                                              (enter '1' or '2')
                                                      :''')
-if tele == '2':
-    common_args['pixelsize_arcsec'] = 0.24
-    common_args['psf_fwhm_arcsec'] = 1.3
-    sunpy__plot.plot_synthetic_sdss_gri(
-        filename, savefile='./synthetic_sdss_gri_' + str(galnr) + '.png', **common_args)
-    print('Your Sloan Digital Sky Survey Observations are complete,', pal)
-
-elif tele == '1':
-    sunpy__plot.plot_synthetic_hst(
-        filename, savefile='./synthetic_hst' + str(galnr) + '.png', **common_args)
-    print('Your Hubble Space Telescope Observations are complete,', pal)
-
-else:
-    print('I do not understand what you mean', pal)
-
-redshift = input("""
-
+redshift = float(input("""
+____________________________________________________________________________________________________________
                                ┌─┐┬ ┬┌─┐┌─┐┌─┐┌─┐  ┌─┐  ┬─┐┌─┐┌┬┐┌─┐┬ ┬┬┌─┐┌┬┐
                 ───────────────│  ├─┤│ ││ │└─┐├┤   ├─┤  ├┬┘├┤  ││└─┐├─┤│├┤  │───────────────
                                └─┘┴ ┴└─┘└─┘└─┘└─┘  ┴ ┴  ┴└─└─┘─┴┘└─┘┴ ┴┴└   ┴
 
+                                                     :"""))
 
+if redshift == float(0):
+    common_args['redshift'] = float(0.01)
+else:
+    common_args['redshift'] = redshift
 
-""")
+if tele == '2':
+    # bckg = input("""
+    #                        Would you like to generate a background for this image?
+    #
+    #                                           (Yes or No)
+    #
+    #""")
+    # if bckg == 'yes' or 'YES' or 'Yes' or 'YE' or 'ye' or 'yeh' 'y':
+    #   common_args['add_background'] = True
+    #    import sunpy__synthetic_image
+    #    sunpy__synthetic_image.download_backgrounds()
+    # elif bckg == 'no' or 'NO' or 'No' or 'N' or 'n' or 'nah':
+    #    common_args['add_background'] = False
+    # else:
+    #    print('Excuse me', pal)
+    common_args['pixelsize_arcsec'] = 0.24
+    common_args['psf_fwhm_arcsec'] = 1.3
+    sunpy__plot.plot_synthetic_sdss_gri(
+        filename, savefile='./synthetic_sdss' + str(galnr) + '.png', **common_args)
+    x = 'Sloan Digital Sky Survey'
+
+elif tele == '1':
+    sunpy__plot.plot_synthetic_hst(
+        filename, savefile='./synthetic_hst' + str(galnr) + '.png', **common_args)
+    x = 'Hubble Space Telescope'
+
+else:
+    print('I do not understand what you mean', pal)
+
 
 os.system('clear')
+print('''
+_____________________________________________________________________________________________________________________
+''')
+print('Your ' + str(x) + ' observations at redshift ' +
+      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,', pal)
+input('''
+_____________________________________________________________________________________________________________________
 
-input(r'''
-____________________________________________________________________________________________________________________
-                                 ______                      __     __
-                                / ____/___  ____ ___  ____  / /__  / /____
-                               / /   / __ \/ __ `__ \/ __ \/ / _ \/ __/ _ \
-                              / /___/ /_/ / / / / / / /_/ / /  __/ /_/  __/
-                              \____/\____/_/ /_/ /_/ .___/_/\___/\__/\___/
-                                                  /_/
-____________________________________________________________________________________________________________________
-                                        --(Press enter to end program)--
+
+
 ''')
 
 os.system('clear')
 
 input(r"""
+_____________________________________________________________________________________________________________________
                                ╦ ╦╔═╗┌─┐┌┐┌┌┐┌  ╔═╗┌─┐┌┬┐┬─┐┌─┐┌─┐┬ ┬┬ ┬┌─┐┬┌─┐┌─┐
                                ║ ║║  │ │││││││  ╠═╣└─┐ │ ├┬┘│ │├─┘├─┤└┬┘└─┐││  └─┐
                                ╚═╝╚═╝└─┘┘└┘┘└┘  ╩ ╩└─┘ ┴ ┴└─└─┘┴  ┴ ┴ ┴ └─┘┴└─┘└─┘
@@ -218,12 +244,16 @@ input(r"""
                                        ╔╗╔╔═╗╔═╗╔═╗  ╔═╗╔╦╗  ╔═╗ ╔═╗ ╔═╗
                                        ║║║╠═╣╚═╗╠═╣  ║   ║   ╚═╗ ║ ╦ ║
                                        ╝╚╝╩ ╩╚═╝╩ ╩  ╚═╝ ╩   ╚═╝.╚═╝.╚═╝.
-                                                    -(enter)-
+
+                                                 THANK YOU
+
+                                        (press return to end program)
 ____________________________________________________________________________________________________________________
 """)
 
 # THANK YOU :)
 # FEEL FREE TO REACH OUT AND CONTACT ME FOR ANY REASON : tylerphys@uconn.edu, tyler.metivier@gmail.com
 
+os.system('clear')
 
 exit()

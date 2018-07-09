@@ -1,6 +1,7 @@
 *.py~
 *.txt~
 *.md~
+*.fits
 clean.sh
 setup~
 s.sh~
