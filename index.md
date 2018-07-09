@@ -73,7 +73,12 @@ The program file "**Illustris Virtual Observatory**" is a Unix executable- but i
 
 ![Full Functions](misc/pics/p5.png)
 
-Here, you can completely customize the output. Changing the redshift on this page will change
+Here, you can completely customize the output. Changing the redshift on this page will make the image convolve to the corresponding value once the program is run. The file can also be modified to include multiple outputs, backgrounds, etc... 
+
+For more on modification, refer to the Sunpy module (source code). 
 
 
+> Tyler Metivier, Whitaker Research Group, University of Connecticut
+
+> NASA CT Space Grant Consortium
 
