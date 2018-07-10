@@ -194,28 +194,6 @@ def return_synthetic_sdss_gri_img(filename,
     return rp, img
 
 
-'''
-os.chdir(r'/Users/tylermetivier/sm3/ImagePipelineFilters')
-f606 = "/Users/tylermetivier/sm3/ImagePipelineFilters/ACS_F606_NEW.res"
-f105 = "/Users/tylermetivier/sm3/ImagePipelineFilters/f105w.IR.res"
-f125 = "/Users/tylermetivier/sm3/ImagePipelineFilters/f125w.IR.res"
-f160 = "/Users/tylermetivier/sm3/ImagePipelineFilters/f160w.IR.res"
-
-bg_zpt = {"u_SDSS.res": [22.5],
-          "g_SDSS.res": [22.5],
-          "r_SDSS.res": [22.5],
-          "i_SDSS.res": [22.5],
-          "z_SDSS.res": [22.5],  # I added the next four lines for HST
-          "ACS_F435_NEW.res": [25.69],
-          "ACS_F606_NEW.res": [25.69],
-          "ACS_F775_NEW.res": [25.69],
-          "ACS_F850_NEW.res": [25.69],
-          "f105w.IR.res": [25.69],
-          "f125w.IR.res": [25.69],
-          "f160w.IR.res": [25.69]}
-'''
-
-
 def return_synthetic_hst_img(filename,
                              lupton_alpha=0.5, lupton_Q=0.5, scale_min=1e-4,
                              b_fac=1.0, g_fac=1.0, r_fac=1.0, max=1.0, dynrng=1e3, r_petro_kpc=None,
@@ -305,69 +283,6 @@ def return_synthetic_hst_img(filename,
 
     img[img < 0] = 0
     return rp, img
-
-
-'''
-
-n_pixels = r_image.shape[0]
-img = np.zeros((n_pixels, n_pixels, 3), dtype=float)
-
-b_image *= b_fac
-g_image *= g_fac
-r_image *= r_fac
-
-if 0:
-I = (r_image + g_image + b_image) / 3
-val = np.arcsinh(lupton_alpha * lupton_Q * (I - scale_min)) / lupton_Q
-# from below, this effectively sets the pixel to 0
-I[I < 1e-6] = 1e100
-
-img[:, :, 0] = r_image * val / I
-img[:, :, 1] = g_image * val / I
-img[:, :, 2] = b_image * val / I
-
-maxrgbval = np.amax(img, axis=2)
-
-changeind = maxrgbval > 1.0
-img[changeind, 0] = img[changeind, 0] / maxrgbval[changeind]
-img[changeind, 1] = img[changeind, 1] / maxrgbval[changeind]
-img[changeind, 2] = img[changeind, 2] / maxrgbval[changeind]
-
-minrgbval = np.amin(img, axis=2)
-changeind = minrgbval < 0.0
-img[changeind, 0] = 0
-img[changeind, 1] = 0
-img[changeind, 2] = 0
-
-changind = I < 0
-img[changind, 0] = 0
-img[changind, 1] = 0
-img[changind, 2] = 0
-img[img < 0] = 0
-
-else:
-img[:, :, 0] = np.log10(r_image)  # / max=1.0, dynrng=1e3,
-img[:, :, 1] = np.log10(g_image)
-img[:, :, 2] = np.log10(b_image)
-
-img -= np.log10(max / dynrng)
-img /= np.log10(dynrng)
-
-img[img > 1] = 1
-I = img
-val = img
-
-img[img < 0] = 0
-print("img min/max/mean " + str(img.min()) + "  " +
-str(img.max()) + "  " + str(img.mean()))
-print(" ")
-
-del b_image, g_image, r_image, I, val
-gc.collect()
-
-img[img < 0] = 0
-return rp, img
-'''
 
 
 def return_sdss_gri_img(filename, camera=0, scale_min=0.1, scale_max=50, size_scale=1.0, non_linear=0.5):
