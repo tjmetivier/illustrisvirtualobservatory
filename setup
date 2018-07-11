@@ -128,4 +128,8 @@ read
 
 open http://illustris-project.org/galaxy_obs/
 
+mkdir html
+
+mv *.md *.html __pycache__ _layouts _sass assets/css html 
+
 exit
