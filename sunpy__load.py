@@ -29,13 +29,13 @@ import scipy.ndimage
 import sunpy__synthetic_image
 
 
-__author__ = "Paul Torrey and Greg Snyder"
-__copyright__ = "Copyright 2014, The Authors"
-__credits__ = ["Paul Torrey", "Greg Snyder"]
-__license__ = "GPL"
-__version__ = "1.0"
-__maintainer__ = "Paul Torrey"
-__email__ = "ptorrey@cfa.harvard.edu"
+__author__ = "Paul Torrey, Greg Snyder, Tyler Metivier"
+__copyright__ = "Copyright 2018, The Authors"
+__credits__ = ["Paul Torrey", "Greg Snyder","Tyler Metivier"]
+__license__ = "MIT"
+__version__ = "1.1"
+__maintainer__ = "Tyler Metivier"
+__email__ = "tylerphys@uconn.edu"
 __status__ = "Production"
 if __name__ == '__main__':
     pass
