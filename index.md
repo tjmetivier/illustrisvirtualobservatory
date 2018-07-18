@@ -11,18 +11,16 @@ layout: default
 
 
 >_This program was created by updating, compiling, and modifying the [Sunpy Module](http://www.github.com/ptorrey/sunpy/) by Dr. Torrey & Dr. Snyder._
->_Unix-based system requirement_
+>_Unix/MacOS/Linux requirement_
 * * *
 
 # Installation
 
 >Dependencies required: numpy, matplotlib, astropy, cosmocalc, scipy, gc, and wget.
 
-## Download the repository
+## Downloading the repository
 
-After downloading the files and saving them to your working directory, we can first run the program called **setup**.
-
-It's recommended to have [Anaconda](https://www.anaconda.com/download/) installed on your machine as well. 
+Clicking the 'Download .zip' or 'Download .tar.gz' will download a complete directory of files. However, this program has many dependencies, so the file called '**setup**' should be run first. The file is written in bash and can be modified in a text editor before execution if manual dependency setup is preferred.
 
 This will download any dependency that the program requires as well as open up a webpage to the [Illustris Galaxy Observatory-](http://www.illustris-project.org/galaxy_obs/) where mock galaxies from the Illustris simulation can be viewed.
 
@@ -52,6 +50,8 @@ Run the program titled **Illustris Virtual Observatory**- this should open up th
 
 ![Program](misc/pics/p3.png)
 
+If the program doesn't execute, first see if the shebang (#!/bin/usr/env python) (_on the first line_) is correct for your installation of Python. If you use anaconda or microconda, the shebang may have to be edited to point to the correct build of Python.
+
 Follow the program and enter your chosen galaxy **ID** when prompted. If everything is working correctly, you should be given a choice:
 
 1.                                      **Hubble Space Telescope** (_option 1_)
@@ -75,12 +75,11 @@ The program file "**Illustris Virtual Observatory**" is a Unix executable- but i
 
 ![Full Functions](misc/pics/p5.png)
 
-Here, you can completely customize the output. Changing the redshift on this page will make the image convolve to the corresponding value once the program is run. The file can also be modified to include multiple outputs, backgrounds, etc... 
+Here, you can completely customize the output. Changing the redshift on this page will make the image convolve to the corresponding value once the program is run. The file can also be modified to include multiple outputs, backgrounds, etc...
 
-For more on modification, refer to the Sunpy module (source code). 
+For more on modification, refer to the Sunpy module (source code).
 
 
 > Tyler Metivier, Whitaker Research Group, University of Connecticut
 
 > NASA CT Space Grant Consortium
-
