@@ -82,4 +82,4 @@ For more on modification, refer to the Sunpy module (source code).
 
 > Tyler Metivier, Whitaker Research Group, University of Connecticut
 
-> NASA CT Space Grant Consortium
+> funded by NASA CT Space Grant Consortium through an Undergraduate Research Fellowship Grant
