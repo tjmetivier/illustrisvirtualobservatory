@@ -20,7 +20,9 @@ layout: default
 
 ## Download the repository
 
-After downloading the files and saving them to your working directory, we can first run the program called **setup**.  
+After downloading the files and saving them to your working directory, we can first run the program called **setup**.
+
+It's recommended to have [Anaconda](https://www.anaconda.com/download/) installed on your machine as well. 
 
 This will download any dependency that the program requires as well as open up a webpage to the [Illustris Galaxy Observatory-](http://www.illustris-project.org/galaxy_obs/) where mock galaxies from the Illustris simulation can be viewed.
 

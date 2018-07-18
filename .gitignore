@@ -2,6 +2,7 @@
 *.txt~
 *.md~
 *.fits
+404.html
 clean.sh
 setup~
 s.sh~
