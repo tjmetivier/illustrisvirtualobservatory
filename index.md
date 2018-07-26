@@ -3,7 +3,7 @@ layout: default
 ---
 ![Logo](misc/pics/new.png)
 
- <video src="ivo.mp4" width="320" height="200" controls preload></video>
+                          <video src="ivo.mp4" width="320" height="200" controls preload></video>
  
 *   A command line program for creating synthetic observations of galaxies from [Illustris](http://www.illustris-project.org/).
 
@@ -56,9 +56,9 @@ If the program doesn't execute, first see if the shebang (#!/bin/usr/env python)
 
 Follow the program and enter your chosen galaxy **ID** when prompted. If everything is working correctly, you should be given a choice:
 
-1.                                      **Hubble Space Telescope** (_option 1_)
+1.                                      **Hubble Space Telescope** (option 1)
 
-2.                                     **Sloan Digital Sky Survey** (_option 2_)
+2.                                     **Sloan Digital Sky Survey** (option 2)
 
 Based on your choice, the images produced will be convolved to the respective pixel-scaling/resolution.
 
