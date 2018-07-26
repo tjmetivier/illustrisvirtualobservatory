@@ -2,7 +2,9 @@
 layout: default
 ---
 ![Logo](misc/pics/new.png)
+
  <video src="ivo.mp4" width="320" height="200" controls preload></video>
+ 
 *   A command line program for creating synthetic observations of galaxies from [Illustris](http://www.illustris-project.org/).
 
 *   Create mock observations from Hubble Space Telescope or Sloan Digital Sky Survey.
