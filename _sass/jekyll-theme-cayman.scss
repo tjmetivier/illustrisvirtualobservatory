@@ -45,7 +45,6 @@ a {
 
 .btn {
   display: inline-block;
-  position: absolute;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
@@ -64,6 +63,7 @@ a {
 
   + .btn {
     margin-left: 1rem;
+    position: absolute;
   }
 
   @include large {
@@ -84,6 +84,7 @@ a {
     + .btn {
       margin-top: 1rem;
       margin-left: 0;
+      position: absolute;
     }
   }
 }
