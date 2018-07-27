@@ -88,9 +88,7 @@ a {
 }
 
 .page-header {
-  text-align: center;
-  background-color:url('misc/pics/back.png');
-  background-image:url('misc/pics/back.png');
+}
 
   @include large {
     padding: 5rem 6rem;
