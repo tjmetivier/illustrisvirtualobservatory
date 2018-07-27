@@ -2,7 +2,7 @@
 @import "rouge-github";
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('misc/pics/back.png');
+@import url(misc/pics/back.png);
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
@@ -91,7 +91,7 @@ a {
 .page-header{
    background-color: #000000;
    text-align: center;
-   background-image: url('misc/pics/back.png'); 
+   background-image: url(misc/pics/back.png); 
    background-position: 100% 100%;
    background-repeat: no-repeat;
 
