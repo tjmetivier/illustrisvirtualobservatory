@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Logo](misc/pics/new.png)
+<img src="misc/pics/new.png" alt="drawing" width="200px"/>
 
 
 
