@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img src="misc/pics/new.png" alt="drawing" width="900px"/>
+<img src="misc/pics/new.png" alt="drawing" width="1200px"/>
 
 
 
