@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
+
 ![Logo](misc/pics/new.png)
 
+
+
  <div style="text-align:center"><video src="ivo.mp4" width="640" height="410" controls preload></video></div>
+ 
 
 *   A command line program for creating synthetic observations of galaxies from [Illustris](http://www.illustris-project.org/).
 
