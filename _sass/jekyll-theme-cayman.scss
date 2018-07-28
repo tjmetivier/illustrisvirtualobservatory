@@ -32,7 +32,9 @@ body {
   line-height: 1.5;
   color: $body-text-color;
 }
-
+.head{
+  z-index: -5;
+}
 a {
   color: $body-link-color;
   text-decoration: none;
