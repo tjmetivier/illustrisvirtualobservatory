@@ -63,7 +63,6 @@ a {
 
   + .btn {
     margin-left: 1rem;
-    position: relative;
   }
 
   @include large {
@@ -84,7 +83,6 @@ a {
     + .btn {
       margin-top: 1rem;
       margin-left: 0;
-      position: relative;
     }
   }
 }
