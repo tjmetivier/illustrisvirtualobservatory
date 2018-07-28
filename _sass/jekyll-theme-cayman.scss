@@ -85,17 +85,12 @@ a {
     + .btn {
       margin-top: 1rem;
       margin-left: 0;
-      position: absolute;
+      position: relative;
     }
   }
 }
 
 
-.page-header {
-   height: 23em;
-   color: $header-heading-color;
-   background-color: #000000;
-  
 
 
   @include large {
