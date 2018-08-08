@@ -29,11 +29,11 @@ import gc
 
 __author__ = "Paul Torrey, Greg Snyder, and Tyler Metivier"
 __copyright__ = "Copyright 2018, The Authors"
-__credits__ = ["Paul Torrey", "Greg Snyder"]
+__credits__ = ["Paul Torrey", "Greg Snyder", "Tyler Metivier"]
 __license__ = "GPL"
-__version__ = "1.1"
-__maintainer__ = "Paul Torrey"
-__email__ = "ptorrey@mit.harvard.edu"
+__version__ = "1.2"
+__maintainer__ = "Tyler Metivier"
+__email__ = "tylerphys@uconn.edu"
 __status__ = "Production"
 if __name__ == '__main__':  # code to execute if called from command-line
     pass  # do nothing
