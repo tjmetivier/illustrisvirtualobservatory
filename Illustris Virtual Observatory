@@ -6,7 +6,6 @@
                                         Illustris Virtual Observatory,
                                      Tyler Metivier, tylerphys@uconn.edu
                                           University of Connecticut
-
                                         NASA CT Space Grant Consortium                              (Tyler's funding)
                                   Adapted from Sunpy module by Dr. Torrey 2015
 
@@ -210,7 +209,7 @@ print('''
 _____________________________________________________________________________________________________________________
 ''')
 print('Your ' + str(x) + ' observations at redshift ' +
-      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,', pal)
+      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,', pal +'. Output files saved in home directory')
 input('''
 _____________________________________________________________________________________________________________________
 
