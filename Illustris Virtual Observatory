@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 
 
@@ -189,20 +190,6 @@ else:
     common_args['redshift'] = redshift
 
 if tele == '2':
-    # bckg = input("""
-    #                        Would you like to generate a background for this image?
-    #
-    #                                           (Yes or No)
-    #
-    #""")
-    # if bckg == 'yes' or 'YES' or 'Yes' or 'YE' or 'ye' or 'yeh' 'y':
-    #   common_args['add_background'] = True
-    #    import sunpy__synthetic_image
-    #    sunpy__synthetic_image.download_backgrounds()
-    # elif bckg == 'no' or 'NO' or 'No' or 'N' or 'n' or 'nah':
-    #    common_args['add_background'] = False
-    # else:
-    #    print('Excuse me', pal)
     common_args['pixelsize_arcsec'] = 0.24
     common_args['psf_fwhm_arcsec'] = 1.3
     sunpy__plot.plot_synthetic_sdss_gri(
@@ -256,4 +243,4 @@ ________________________________________________________________________________
 
 os.system('clear')
 
-exit()
+
