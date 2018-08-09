@@ -8,7 +8,7 @@ layout: default
 
 *   A command line program for creating synthetic observations of galaxies from [Illustris](http://www.illustris-project.org/).
 
-*   Create mock observations from Hubble Space Telescope or Sloan Digital Sky Survey.
+*   Create mock observations from Hubble Space Telescope, Sloan Digital Sky Survey, or James Webb Space Telescope.
 
 *   Customize parameters like redshift, camera, filter etc...
 
@@ -23,7 +23,17 @@ layout: default
 
 ## Downloading the repository
 
-Clicking the 'Download .zip' or 'Download .tar.gz' will download a complete directory of files. However, this program has many dependencies, so the file called '**setup**' should be run first. The file is written in bash and can be modified in a text editor before execution if manual dependency setup is preferred.
+Clicking the 'Download .zip' or 'Download .tar.gz' will download a complete directory of files. However, this program has many dependencies, so the file called '**setup**' should be run first. 
+
+It may be beneficial for some to navigate to the directory containing these files through your terminal and executing them with:
+```console
+you@urcomputer$ ./setup
+...
+you@urcomputer$ ./Illustris \Virtual \Observatory
+```
+This will ensure that all outputs are sent to the directory you are currently in & create environments in one terminal.
+
+The file is written in bash and can be modified in a text editor before execution if manual dependency setup is preferred.
 
 This will download any dependency that the program requires as well as open up a webpage to the [Illustris Galaxy Observatory-](http://www.illustris-project.org/galaxy_obs/) where mock galaxies from the Illustris simulation can be viewed.
 
