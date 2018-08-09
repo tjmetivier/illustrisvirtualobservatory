@@ -2,8 +2,6 @@
 layout: default
 ---
 
-
- <div style="text-align:center"><video src="ivo.mp4" width="650" height="240" controls preload></video></div>
  
 
 *   A command line program for creating synthetic observations of galaxies from [Illustris](http://www.illustris-project.org/).
@@ -12,6 +10,9 @@ layout: default
 
 *   Customize parameters like redshift, camera, filter etc...
 
+
+ <div style="text-align:center"><video src="ivo.mp4" width="500" height="240" controls preload></video></div>
+ 
 
 >_This program was created by updating, compiling, and modifying the [Sunpy Module](http://www.github.com/ptorrey/sunpy/) by Dr. Torrey & Dr. Snyder._
 >_Unix/MacOS/Linux requirement_
@@ -25,11 +26,16 @@ layout: default
 
 Clicking the 'Download .zip' or 'Download .tar.gz' will download a complete directory of files. However, this program has many dependencies, so the file called '**setup**' should be run first. 
 
+If the files **setup** or **Illustris Virtual Observatory** are **NOT** executable- the following command will give them this ability:
+```console
+u@urcomputer$ chmod +x setup; chmod +x Illustris \Virtual \Observatory
+```
+
 It may be beneficial for some to navigate to the directory containing these files through your terminal and executing them with:
 ```console
-you@urcomputer$ ./setup
+u@urcomputer$ ./setup
 ...
-you@urcomputer$ ./Illustris \Virtual \Observatory
+u@urcomputer$ ./Illustris \Virtual \Observatory
 ```
 This will ensure that all outputs are sent to the directory you are currently in & create environments in one terminal.
 
