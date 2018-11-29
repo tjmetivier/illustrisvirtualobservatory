@@ -97,7 +97,7 @@ n_pixels_galaxy_zoo = 424
 # #########################################################
 
 dl_base = "http://www.illustris-project.org/files/backgrounds"
-bg_base = './data/'
+bg_base = 'data'
 backgrounds = [	[], [], 		# GALEX 0 1
                 [bg_base + '/SDSS_backgrounds/J113959.99+300000.0-u.fits'], 	# 2 SDSS-u
                 [bg_base + '/SDSS_backgrounds/J113959.99+300000.0-g.fits'], 	# 3 SDSS-g
@@ -126,9 +126,9 @@ bg_zpt = {"u_SDSS.res": [22.5],
           "ACS_F606_NEW.res": [25.69],  # 26.67
           "ACS_F775_NEW.res": [25.69],  # 26.41
           "ACS_F850_NEW.res": [25.69],  # 25.95
-          "f105w.IR.res": [25.69],     # 27.69
-          "f125w.IR.res": [25.69],     # 28.02
-          "f160w.IR.res": [25.69],
+          "f105w.IR.res": [26.0974],     # 27.69
+          "f125w.IR.res": [26.0449],     # 28.02
+          "f160w.IR.res": [25.907], # this is really f606w but the keyname is incorrect
 		  'NIRCAM_prelimfiltersonly_F277W': [29.00],
 		  'NIRCAM_prelimfiltersonly_F356W': [29.00],
 		  'NIRCAM_prelimfiltersonly_F444W': [29.00]  }     # 28.19

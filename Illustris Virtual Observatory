@@ -126,7 +126,7 @@ common_args = {
     'add_noise':            True,
     'add_psf':              True,
     'rebin_phys':           True,
-    'resize_rp':            False,
+    'resize_rp':            True,
     'rebin_gz':             True,           # always true, all pngs 424x424
     'scale_min':            1e-10,          # was 1e-4
     'lupton_alpha':         2e-12,          # was 1e-4
@@ -216,7 +216,7 @@ print('''
 _____________________________________________________________________________________________________________________
 ''')
 print('Your ' + str(x) + ' observations at redshift ' +
-      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,', pal+'. Output files saved in home directory')
+      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,', pal)
 input('''
 _____________________________________________________________________________________________________________________
 

@@ -227,7 +227,7 @@ def return_synthetic_hst_img(filename,
 
         n_iter += 1
 
-    b_image, rp, the_used_seed, this_fail_flag, _, _ = sunpy__synthetic_image.build_synthetic_image(filename, 21,  # 25,
+    b_image, rp, the_used_seed, this_fail_flag, _, _ = sunpy__synthetic_image.build_synthetic_image(filename, 25,  # 25,
                                                                                                     seed=seed, fix_seed=False,
                                                                                                     r_petro_kpc=r_petro_kpc,
                                                                                                     **kwargs)
@@ -241,14 +241,14 @@ def return_synthetic_hst_img(filename,
     if(this_fail_flag):
         fail_flag = True
 
-    g_image, dummy, the_used_seed, this_fail_flag,  _, _ = sunpy__synthetic_image.build_synthetic_image(filename, 22,
+    g_image, dummy, the_used_seed, this_fail_flag,  _, _ = sunpy__synthetic_image.build_synthetic_image(filename, 26,
                                                                                                         seed=the_used_seed, fix_seed=True,
                                                                                                         r_petro_kpc=rp,
                                                                                                         **kwargs)
     if(this_fail_flag):
         fail_flag = True
 
-    r_image, dummy, the_used_seed, this_fail_flag,  _, _ = sunpy__synthetic_image.build_synthetic_image(filename, 23,
+    r_image, dummy, the_used_seed, this_fail_flag,  _, _ = sunpy__synthetic_image.build_synthetic_image(filename, 27,
                                                                                                         seed=the_used_seed, fix_seed=True,
                                                                                                         r_petro_kpc=rp,
                                                                                                         **kwargs)
