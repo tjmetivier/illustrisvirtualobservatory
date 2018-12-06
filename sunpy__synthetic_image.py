@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """ Defines the synthetic_image class to add image realism to the idealized sunrise images.
 
 The synthetic_image class defines a number of routines to take the original image and
 convolve it with some psf function, add sky noise, rebin to an appropate pixel scale
-(based on telescope), scale to an approparte image size (based on a petrosian radius
-calculation, and add background image (SDSS only supported at the moment).
+(based on telescope), scale to an appropriate image size (based on a petrosian radius
+calculation, and add background image.
 
 
 The majority of the code in this file was developed by Greg Snyder and can be found in
