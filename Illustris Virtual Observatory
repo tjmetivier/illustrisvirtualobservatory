@@ -60,48 +60,21 @@ start = input(r"""
        ─ ──────────  ├─┘├┬┘├┤ └─┐└─┐  ║╣ ║║║ ║ ║╣ ╠╦╝   │ │ │  │  │ ││││ │ │││││ │├┤   ────────── ─
        /│\           ┴  ┴└─└─┘└─┘└─┘  ╚═╝╝╚╝ ╩ ╚═╝╩╚═   ┴ └─┘  └─┘└─┘┘└┘ ┴ ┴┘└┘└─┘└─┘           /│\
 
+                                                                                                        1-3-2019
 """)
 
 os.system('clear')
 
-pal = input(r'''
-____________________________________________________________________________________________________________
 
-
-                                                Hello!
-
-
-                                           What is your name?
-
-
-                                             : ''')
-
-os.system('clear')
-
-print('''
-____________________________________________________________________________________________________________
-
-
-                                     It`s nice to meet you,
-
-                                           ''', pal)
 
 my_api = "a4385a1f5eac5c06e2e2c1f45eebb4d3"  # This is my (T.M.) API
 
-sim_vers = np.float64(input(r'''
-____________________________________________________________________________________________________________
-
-
-                                Which simulation would you like to access?
-
-                    Illustris (1)                                 IllustrisTNG (2)
-                                           (enter 1 or 2)
-
-                                             : '''))
+sim_vers = 1
 if sim_vers == 1:
     dl_base = 'http://www.illustris-project.org'
-elif sim_vers == 2:
-    dl_base = 'http://www.tng-project.org'
+#elif sim_vers == 2:
+#    dl_base = 'http://www.tng-project.org'
+#    my_api = "e5a4933eb4eb2b11ec588ac67222b6ee"
 else:
     print("Sorry, that's not an option")
 
@@ -173,10 +146,18 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________
                                     You chose galaxy""", galnr)
 
-    cmd = 'wget --content-disposition --header="API-Key: ' + my_api + '" "' + dl_base + \
-        '/api/Illustris-1/snapshots/135/subhalos/' + str(galnr) +  \
-        '/stellar_mocks/broadband.fits"'
+                                    # if IllustrisTNG has broadband fits files at some point, the below feature will be added
 
+
+    if sim_vers == 2:
+        cmd = 'wget --content-disposition --header="API-Key: ' + my_api + '" "' + dl_base + \
+            '/api/TNG100-1/snapshots/99/subhalos/' + str(galnr) +  \
+            '/stellar_mocks/broadband.fits"'
+    elif sim_vers ==1:
+        snapshot = "/snapshots/135"
+        cmd = 'wget --content-disposition --header="API-Key: ' + my_api + '" "' + dl_base + \
+            '/api/Illustris-1'+ snapshot +'/subhalos/' + str(galnr) +  \
+            '/stellar_mocks/broadband.fits"'
     if(not (os.path.isfile("./broadband_" + str(galnr) + ".fits"))):
         os.system(cmd)
     filename = "./broadband_" + str(galnr) + ".fits"
@@ -233,7 +214,7 @@ print('''
 _____________________________________________________________________________________________________________________
 ''')
 print('Your ' + str(x) + ' observations at redshift ' +
-      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,', pal)
+      str(redshift) + ' for galaxy ' + str(galnr) + ' are complete,')
 input('''
 _____________________________________________________________________________________________________________________
 
