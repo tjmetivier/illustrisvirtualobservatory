@@ -10,6 +10,7 @@ layout: default
 
 *   Customize parameters like redshift, camera, filter etc...
 
+*   Download SDSS backgrounds from http://www.illustris-project.org/files/backgrounds/SDSS_backgrounds/
 
  <div style="text-align:center"><video src="ivo.mp4" width="500" height="240" controls preload></video></div>
  
